@@ -46,15 +46,25 @@ This dynamic dashboard allows users to:
 - 🧠 **Insight Boxes** – Summary of key findings
 - 🧮 **Interactive Filters** – Instantly view data for specific categories or departments
 - 📈 **Dynamic Charts** – Clear and colorful visuals to support storytelling
-- - 🔴🟢 **Conditional Formatting Alerts** – Auto highlights budget status:
+-- 🔴🟢 **Conditional Formatting Alerts** – Intelligent visual feedback using color rules in the "In-Budget / Overspending" table:
 
-  | Condition                     | Color |
-  |------------------------------|--------|
-  | **Overspending**              | 🔴 Red |
-  | **In-Budget**                 | 🟢 Green |
+### 🎨 Conditional Formatting Logic
 
-  > 📌 This is shown in the “In-Budget / Overspending” table for each department.
+| Condition                                         | Rule Used                                               | Color  |
+|--------------------------------------------------|----------------------------------------------------------|--------|
+| **Overspending Alert**                           | `=Actual_Spent > Budget_Allocated`                      | 🔴 Red |
+| **In-Budget Status**                             | `=Actual_Spent <= Budget_Allocated`                     | 🟢 Green |
+| **Near-Budget Warning (Optional, 90–100%)**      | `=AND(Actual_Spent > 0.9 * Budget_Allocated, Actual_Spent <= Budget_Allocated)` | 🟡 Yellow |
 
+> These rules are applied to individual rows within the department table using **Conditional Formatting Rules Manager** in Excel.
+
+This makes it instantly clear which departments are:
+
+- Exceeding their budget (highlighted in **Red** 🔴)
+- Staying within limits (highlighted in **Green** 🟢)
+- Approaching the limit (optional logic in **Yellow** 🟡)
+
+The visual alerts help users **quickly spot budget anomalies** without needing to manually check numbers.
 
 ---
 
