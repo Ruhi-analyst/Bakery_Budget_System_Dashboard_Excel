@@ -46,7 +46,7 @@ This dynamic dashboard allows users to:
 - 🧠 **Insight Boxes** – Summary of key findings
 - 🧮 **Interactive Filters** – Instantly view data for specific categories or departments
 - 📈 **Dynamic Charts** – Clear and colorful visuals to support storytelling
--- 🔴🟢 **Conditional Formatting Alerts** – Intelligent visual feedback using color rules in the "In-Budget / Overspending" table:
+- 🔴🟢 **Conditional Formatting Alerts** – Intelligent visual feedback using color rules in the "In-Budget / Overspending" table:
 
 ### 🎨 Conditional Formatting Logic
 
