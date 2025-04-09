@@ -46,6 +46,15 @@ This dynamic dashboard allows users to:
 - 🧠 **Insight Boxes** – Summary of key findings
 - 🧮 **Interactive Filters** – Instantly view data for specific categories or departments
 - 📈 **Dynamic Charts** – Clear and colorful visuals to support storytelling
+- - 🔴🟢 **Conditional Formatting Alerts** – Auto highlights budget status:
+
+  | Condition                     | Color |
+  |------------------------------|--------|
+  | **Overspending**              | 🔴 Red |
+  | **In-Budget**                 | 🟢 Green |
+
+  > 📌 This is shown in the “In-Budget / Overspending” table for each department.
+
 
 ---
 
